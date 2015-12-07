@@ -1,0 +1,97 @@
+﻿div.slideshow.small {
+   width: 697px;
+   height: 448px;
+}
+
+div.slideshow.medium {
+   width: 795px;
+   height: 417px;	
+}
+
+div.slideshow {
+   position: relative;
+   width: 956px;
+   height: 450px;
+   margin: 0;
+   padding: 0;
+}
+
+div.slideshow div.slides {
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+div.slideshow div.slides div {
+   display: none;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left:0;
+   overflow: hidden;
+}
+
+div.slideshow div.slides div.selected {
+   display: block;
+}
+
+div.slideshow div.controls {
+   position: absolute;
+   z-index: 3;
+   right: 10px;
+   top: 10px;
+}
+
+div.slideshow div.controls a {
+   display: block;
+   float: left;
+   margin: 0;
+   padding: 0 2px;
+   width: 11px;
+   height: 11px;
+   background: transparent url(/assets/ocp/content/skin/slideshow/dot_on.png) no-repeat center center;  
+}
+
+div.slideshow div.controls a.selected {
+   background-image: url('/assets/ocp/content/skin/slideshow/dot_off.png');
+}
+
+div.slideshow a.paddle-left, div.slideshow a.paddle-right {
+   position: absolute;
+   z-index: 2;
+   top: 150px;
+   width: 37px;
+   height: 150px;
+   cursor: pointer;
+}
+
+div.slideshow a.paddle-left {
+   left: 0;
+   background: transparent url(/assets/ocp/content/skin/sprites/slideshow/slideshow_paddles_left_sprite.png) no-repeat -74px 0;
+}
+
+div.slideshow a.paddle-right {
+   right: 0;
+   background: transparent url(/assets/ocp/content/skin/sprites/slideshow/slideshow_paddles_right_sprite.png) no-repeat 0 0;
+}
+
+div.slideshow a.paddle-left:hover {
+   background-position: -37px 0;
+}
+
+div.slideshow a.paddle-right:hover {
+   background-position: -37px 0;
+}
+
+div.slideshow a.paddle-left:active {
+   background-position: 0 0;
+}
+
+div.slideshow a.paddle-right:active {
+   background-position: -74px 0;
+}

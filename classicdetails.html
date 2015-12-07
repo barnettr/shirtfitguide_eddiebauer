@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>New Shirt Fits</title>
+<style type="text/css" media="screen">
+#content_0019 {
+    overflow: hidden;
+    list-style: none;
+    border-top: none;
+    background: #FFF;
+    width: 792px !important;
+    height: auto !important;
+    padding-bottom: 15px !important;
+    margin:150px auto 0;
+}
+.slideshow a.paddle-right
+{
+    top: 230px !important;
+    right: 0px !important;
+    width: 31px !important;
+    height: 62px !important;
+    background: url(right_arrow.png) no-repeat scroll 0 0 transparent !important;
+}
+.slideshow a.paddle-left
+{
+    top: 230px !important;
+    left: 0px !important;
+    width: 31px !important;
+    height: 62px !important;
+    background: url(left_arrow.png) no-repeat scroll 0 0 transparent !important;
+}
+div.slideshow div.controls a {background: url(dot_on.png) no-repeat scroll 0 0 transparent !important;}
+div.slideshow div.controls a.selected {background: url(dot_off.png) no-repeat scroll 0 0 transparent !important;}
+.slideshow
+{
+    height: 460px !important;
+    width: 792px !important;
+    float: left; /* margin: 5px 0 0 22px !important; */
+}
+.controls
+{
+    display: block !important;
+}
+.controller {display:none}
+ul {
+    color: #323232;
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    font-weight: normal;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+ul li {line-height:17px;}
+ul.learnFittingWrapper {
+    list-style-type: none;
+    margin:0;    
+}
+    ul.learnFittingWrapper li {
+        float: left;
+        width: 262px;
+        height: 30px;
+    }
+    ul.learnFittingWrapper li.learnFitting a {
+        float:left;
+        background-image: url(learn_fitting.gif);
+        background-repeat: no-repeat;
+        width: 262px;
+        height: 30px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+    }
+ul.relaxedOverlay {
+    list-style-type: none;
+    margin:0;
+    width:266px;
+    height:284px;    
+}
+    ul.relaxedOverlay li {
+        width:266px;
+        height:284px;    
+    }
+    ul.relaxedOverlay li.slimOverlay {
+        background-image: url(slim_overlay.png);
+        background-repeat: no-repeat;
+        position:absolute;
+        top:83px;
+        right:33px;
+        width: 266px;
+        height: 284px;
+        z-index:3       
+    }
+    ul.relaxedOverlay li.classicOverlay {
+        background-image: url(classic_overlay.png);
+        background-repeat: no-repeat;
+        position:absolute;
+        top:83px;
+        right:35px;
+        width: 266px;
+        height: 284px;
+        z-index:3       
+    }
+ul.classicOverlay {
+    list-style-type: none;
+    margin:0;
+    width:266px;
+    height:284px;    
+}
+    ul.classicOverlay li {
+        width:266px;
+        height:284px;    
+    }
+    ul.classicOverlay li.slimOverlay {
+        background-image: url(slim_overlay.png);
+        background-repeat: no-repeat;
+        position:absolute;
+        top:83px;
+        right:34px;
+        width: 266px;
+        height: 284px;
+        z-index:3       
+    }
+    ul.classicOverlay li.relaxedOverlay {
+        background-image: url(relaxed_blue_overlay.png);
+        background-repeat: no-repeat;
+        position:absolute;
+        top:82px;
+        right:36px;
+        width: 266px;
+        height: 284px;
+        z-index:3       
+    }
+ul.slimOverlay {
+    list-style-type: none;
+    margin:0;
+    width:266px;
+    height:284px;    
+}
+    ul.slimOverlay li {
+        width:266px;
+        height:284px;    
+    }
+    ul.slimOverlay li.classicOverlay {
+        background-image: url(classic_overlay.png);
+        background-repeat: no-repeat;
+        position:absolute;
+        top:83px;
+        right:35px;
+        width: 266px;
+        height: 284px;
+        z-index:3       
+    }
+    ul.slimOverlay li.relaxedRedOverlay {
+        background-image: url(relaxed_red_overlay.png);
+        background-repeat: no-repeat;
+        position:absolute;
+        top:82px;
+        right:36px;
+        width: 266px;
+        height: 284px;
+        z-index:3       
+    }
+.jNice {
+    width:14px;
+    height:14px;
+    position:absolute;
+    right:74px;
+    top:323px;
+    z-index:12;        
+}
+.overlayHidden {
+    opacity:0;
+    z-index:-1 !important;
+    position:relative;
+}
+
+</style>
+    <link rel="stylesheet" href="custom_checkbox.css" type="text/css" media="screen" />
+     <link rel="stylesheet" href="slideshow.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="module.slideshow.js"></script>
+    <script language="javascript" type="text/javascript" src="module.customCheckbox.js"></script>
+    <script language="javascript" type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('div.slideshow').slideshow();
+
+            function getPage(i) {
+                jQuery('.control-button[index=' + i + ']').trigger('click');
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div id="content_0019">
+    <div style="position: relative;"><a href="">
+        <img src="title_shirts_fit.gif" border="0" width="792" height="60" alt="" /></a>
+    </div>
+    <div class="slideshow large" rel="{ 'stopSlideId': 1 , 'hoverStopSlide': 'false' }">
+        <div class="slides">
+            <div class="relaxed"> 
+                <img src="slide_relaxed.jpg" border="0" alt="" width="792" height="460" usemap="#m_00000_1000" />
+            </div>
+            <div class="classic"> 
+                <img src="slide_classic.jpg" border="0" alt="" width="792" height="460" usemap="#m_00000_1000" />
+            </div>
+            <div class="slim"> 
+                <img src="slide_slim.jpg" border="0" alt="" width="792" height="460" usemap="#m_00000_1000" />
+            </div>
+                
+            <form class="jNice" id="formOne" style="display:none">  
+                <input type="checkbox" name="relaxedCheckbox" id="checkbox" />
+                <img src="shim.gif" height="6" alt="" />
+                <input type="checkbox" name="relaxedCheckbox" id="checkbox2" />
+            </form>
+            <form class="jNice" id="formTwo" style="display:none">        
+                <input type="checkbox" name="classicCheckbox" id="checkbox3" />
+                <img src="shim.gif" height="6" alt="" />
+                <input type="checkbox" name="classicCheckbox" id="checkbox4" />
+            </form>
+            <form class="jNice" id="formThree" style="display:none">        
+                <input type="checkbox" name="classicCheckbox" id="checkbox5" />
+                <img src="shim.gif" height="6" alt="" />
+                <input type="checkbox" name="classicCheckbox" id="checkbox6" />
+            </form>
+            <ul class="relaxedOverlay" style="display:none">
+                <li class="classicOverlay"><img src="shim.gif" width="266" height="284" border="0" alt="" /></li>
+                <li class="slimOverlay"><img src="shim.gif" width="266" height="284" border="0" alt="" /></li>
+            </ul>
+            <ul class="classicOverlay" style="display:none">
+                <li class="relaxedOverlay"><img src="shim.gif" width="266" height="284" border="0" alt="" /></li>
+                <li class="slimOverlay"><img src="shim.gif" width="266" height="284" border="0" alt="" /></li>
+            </ul>
+            <ul class="slimOverlay" style="display:none">
+                <li class="classicOverlay"><img src="shim.gif" width="266" height="284" border="0" alt="" /></li>
+                <li class="relaxedRedOverlay"><img src="shim.gif" width="266" height="284" border="0" alt="" /></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
